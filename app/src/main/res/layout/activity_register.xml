@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="150dp"
+    android:layout_gravity="center"
+    android:background="#DEE5EA"
+
     tools:context=".RegisterActivity">
 
     <EditText
@@ -13,6 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Email"
+        android:paddingTop="200dp"
         android:layout_marginTop="100dp"
         android:layout_margin="25dp"/>
 
@@ -42,6 +45,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/number"
         android:text="register"
+        android:background="@drawable/roundbutton"
         android:layout_marginTop="100dp"
         android:layout_margin="25dp"/>
 

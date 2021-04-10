@@ -28,7 +28,6 @@
     <Button
         android:id="@+id/register"
         android:background="@drawable/roundbutton"
-        android:backgroundTint="#89A9C5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
