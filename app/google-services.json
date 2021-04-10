@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "938563383041",
+    "project_id": "nudge-89a63",
+    "storage_bucket": "nudge-89a63.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:938563383041:android:1980d0d1ed29b0648f7500",
+        "android_client_info": {
+          "package_name": "com.ch.nudge"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "938563383041-pp7bscrqspin9hs962mr0ppe7knuju4m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZBaEZFusMC2h0OVmopM2LrERw0ia25x4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "938563383041-pp7bscrqspin9hs962mr0ppe7knuju4m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
