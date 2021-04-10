@@ -7,12 +7,21 @@
     android:background="#DEE5EA"
     tools:context=".LoginActivity">
 
+    <TextView
+        android:id="@+id/textLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="150dp"
+        android:textSize="30dp"
+        android:layout_margin="25dp"
+        android:text="Login"/>
+
     <EditText
         android:id="@+id/email"
         android:inputType="textEmailAddress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="200dp"
+        android:layout_below="@id/textLogin"
         android:layout_marginTop="100dp"
         android:layout_margin="25dp"
         android:hint="Email"/>
