@@ -23,7 +23,7 @@ public class InitActivity extends AppCompatActivity {
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(InitActivity.this, RegisterActivity.class));
+                startActivity(new Intent(InitActivity.this, RegisterActivity_1.class));
                 finish();
             }
         });

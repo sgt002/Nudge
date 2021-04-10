@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#DEE5EA"
+
+    tools:context=".RegisterActivity_1">
+    <TextView
+        android:id="@+id/textRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="125dp"
+        android:textSize="30dp"
+        android:layout_margin="25dp"
+        android:text="Register"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:layout_below="@id/textRegister"
+        android:layout_marginTop="100dp"
+        android:layout_margin="25dp"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email"
+        android:hint="Password"
+        android:layout_marginTop="100dp"
+        android:layout_margin="25dp"/>
+
+    <EditText
+        android:id="@+id/passwordConfirm"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:hint="Confirm Password"
+        android:layout_marginTop="100dp"
+        android:layout_margin="25dp"/>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordConfirm"
+        android:text="NEXT"
+        android:background="@drawable/roundbutton"
+        android:layout_marginTop="100dp"
+        android:layout_margin="25dp"/>
+
+
+
+</RelativeLayout>
