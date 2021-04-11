@@ -19,13 +19,16 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class RegisterActivity_2 extends AppCompatActivity{
+import java.io.Serializable;
+
+public class RegisterActivity_2 extends AppCompatActivity {
 
     private EditText phoneNumber;
     private EditText preference;
     private Button register;
 
-    //private DatabaseReference ref;
+    private DatabaseReference ref;
+    private DatabaseReference userRef;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +39,9 @@ public class RegisterActivity_2 extends AppCompatActivity{
         preference = findViewById(R.id.preference);
         register = findViewById(R.id.register);
 
-        //ref = FirebaseDatabase.getInstance().getReference();
+        ref = FirebaseDatabase.getInstance().getReference();
+        userRef = ref.child("users");
+
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -54,6 +59,9 @@ public class RegisterActivity_2 extends AppCompatActivity{
 
     private void setPreferences(String number, String preference) {
         Toast.makeText(RegisterActivity_2.this, "Registration successful!", Toast.LENGTH_SHORT).show();
+        User user = (User) getIntent().getSerializableExtra("User");
+        user.addNumberPref(number, preference);
+        userRef.child(user.username.replaceAll("\\p{Punct}", "")).setValue(user);
         startActivity(new Intent(RegisterActivity_2.this, Home.class));
     }
 }
