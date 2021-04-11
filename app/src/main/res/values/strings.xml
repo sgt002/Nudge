@@ -2,7 +2,7 @@
     <string name="app_name">Nudge</string>
     <string name="title_activity_home">MainActivity</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_dashboard">Journal</string>
+    <string name="title_notifications">Friends</string>
     <string name="title_activity_test">MainActivity</string>
 </resources>
