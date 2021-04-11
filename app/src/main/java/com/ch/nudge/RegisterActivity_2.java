@@ -61,7 +61,7 @@ public class RegisterActivity_2 extends AppCompatActivity {
         Toast.makeText(RegisterActivity_2.this, "Registration successful!", Toast.LENGTH_SHORT).show();
         User user = (User) getIntent().getSerializableExtra("User");
         user.addNumberPref(number, preference);
-        userRef.child(user.username.replaceAll("\\p{Punct}", "")).setValue(user);
-        startActivity(new Intent(RegisterActivity_2.this, Home.class));
+        userRef.child(user.email.replaceAll("\\p{Punct}", "")).setValue(user);
+        startActivity(new Intent(RegisterActivity_2.this, HomeActivity.class));
     }
 }
