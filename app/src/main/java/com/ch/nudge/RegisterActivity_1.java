@@ -50,6 +50,7 @@ public class RegisterActivity_1 extends AppCompatActivity {
                     Toast.makeText(RegisterActivity_1.this, "Passwords must be matching!", Toast.LENGTH_SHORT).show();
                 }else {
                     registerUser(textEmail, textPassword);
+                    System.out.println();
                 }
             }
         });
