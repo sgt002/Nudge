@@ -4,7 +4,6 @@ import java.io.Serializable;
 
 public class User implements Serializable {
 
-    public String username;
     public String email;
     public String phoneNumber;
     public String preference;
@@ -14,12 +13,10 @@ public class User implements Serializable {
     }
 
     public User(String email) {
-        this.username = email;
         this.email = email;
     }
 
     public User(String email, String phoneNumber, String preference) {
-        this.username = email;
         this.email = email;
         this.phoneNumber = phoneNumber;
         this.preference = preference;
