@@ -5,4 +5,5 @@
     <string name="title_dashboard">Journal</string>
     <string name="title_notifications">Friends</string>
     <string name="title_activity_test">MainActivity</string>
+    <string name="add_friend">Add friend</string>
 </resources>
